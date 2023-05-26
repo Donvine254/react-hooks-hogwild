@@ -17,6 +17,7 @@ function App() {
     } else if (selectedCategory === "not-greased") {
       return hog.greased === false;
     }
+    return false;
   });
   if (selectedSort === "Name") {
     hogsToDisplay.sort((a, b) => a.name.localeCompare(b.name));

@@ -12,6 +12,7 @@
     "react-icons": "^4.8.0",
     "react-scripts": "^5.0.1",
     "semantic-ui-css": "^2.2.11",
+    "sweetalert2": "^11.7.5",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

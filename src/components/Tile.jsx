@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import Swal from 'sweetalert2';
+import 'sweetalert2/dist/sweetalert2.css';
 
 function Tile({ hogs }) {
   const [hogFacts, setHogFacts] = useState({});
@@ -10,15 +12,25 @@ function Tile({ hogs }) {
       ...prevHogFacts,
       [hogName]: !prevHogFacts[hogName],
     }));
-   
   }
-  function handleHideHog(hogName){
-    setShowHog((prevShowHog)=>({
-    ...prevShowHog,
-    [hogName]: !prevShowHog[hogName],  
-    }))
+  function handleHideHog(hogName) {
+    Swal.fire({
+      title: 'Are you sure?',
+      text: 'You will not be able to view this champion hog again!',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Yes, Hide it!',
+      cancelButtonText: 'No, keep it'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        setShowHog((prevShowHog) => ({
+          ...prevShowHog,
+          [hogName]: !prevShowHog[hogName],
+        }));
+      }
+    });
   }
-
+  
   return (
     <div className="ui grid container">
       {hogs.map((hog) => {
