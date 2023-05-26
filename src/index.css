@@ -22,10 +22,22 @@ body {
   margin-bottom: 2%;
 }
 
-.filterWrapper {
+.filterWrapper{
   margin: 2% 0% 2% 0%;
+  width:20%;
+  font-size: 1.5rem;
+  background-color: #F5A9BC;
 }
-
+.sort{
+  margin:5px;
+  width:20%;
+  font-size: 1.5rem;
+}
+.sort select{
+  width:100%;
+  border:none;
+  background-color: #F5A9BC;
+}
 .headerText {
   color: #F5A9BC;
   font-size: 3em;
@@ -51,6 +63,7 @@ body {
 
 .hoggyText {
   font-size: 1.5em;
+  line-height: 1.6em;
 }
 .hoggyText span{
   color:rgb(131, 11, 11);
@@ -58,7 +71,8 @@ body {
 }
 
 .achievementText {
-  color: purple;
+  color: rgb(6, 167, 46);
+  font-weight: bold;
 }
 
 ul {
@@ -148,6 +162,20 @@ ul {
 .footer {
   padding: 1%;
   clear: both;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #0b66bb;
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  background-color: #800404;
 }
 
 
