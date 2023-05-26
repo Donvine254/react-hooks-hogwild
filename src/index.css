@@ -52,6 +52,10 @@ body {
 .hoggyText {
   font-size: 1.5em;
 }
+.hoggyText span{
+  color:rgb(131, 11, 11);
+  font-weight:bold;
+}
 
 .achievementText {
   color: purple;
@@ -112,6 +116,12 @@ ul {
   color: #FBB;
 }
 
+.pigTile img{
+  width:auto;
+  height: auto;
+  max-width: 400px;
+  min-height: 300px;
+}
 .minPigTile {
   width: 250px;
   height: 250px;
